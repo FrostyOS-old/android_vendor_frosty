@@ -12,6 +12,7 @@ lineage_soong:
 	echo '    "Uses_nvidia_enhancements": $(if $(filter TRUE,$(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)),true,false),'; \
 	echo '    "Uses_qcom_bsp_legacy": $(if $(filter true,$(TARGET_USES_QCOM_BSP_LEGACY)),true,false),'; \
 	echo '    "Has_legacy_mmap": $(if $(filter true,$(BOARD_USES_LEGACY_MMAP)),true,false),'; \
+	echo '    "Needs_prelink_support": $(if $(filter true,$(TARGET_NEEDS_PRELINK_SUPPORT)),true,false),'; \
 	echo '    "Uses_qti_camera_device": $(if $(filter true,$(TARGET_USES_QTI_CAMERA_DEVICE)),true,false)'; \
 	echo '},'; \
 	echo '') > $(SOONG_VARIABLES_TMP)
