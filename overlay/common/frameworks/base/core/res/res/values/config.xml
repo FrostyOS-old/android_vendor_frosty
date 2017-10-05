@@ -81,4 +81,8 @@
          it should be disabled in that locale's resources. -->
     <bool name="config_buttonTextAllCaps">false</bool>
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
+
 </resources>
