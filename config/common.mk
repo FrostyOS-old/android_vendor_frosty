@@ -14,7 +14,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    ro.setupwizard.rotation_locked=true
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
