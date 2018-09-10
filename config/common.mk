@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
 # Backup and privapp permissions
 PRODUCT_COPY_FILES += \
     vendor/frosty/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
-    vendor/frosty/config/permissions/privapp-permissions-aosp.xml:system/etc/permissions/privapp-permissions-aosp.xml
+    vendor/frosty/config/permissions/privapp-permissions-frosty.xml:system/etc/permissions/privapp-permissions-frosty.xml
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -108,8 +108,8 @@ PRODUCT_PACKAGES += \
 
 # Markup libs
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
-    vendor/aosp/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+    vendor/frosty/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/frosty/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
